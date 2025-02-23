@@ -101,9 +101,7 @@ bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
 
 # screenshots
 
-bindsym F4 exec grim -g "$(slurp)" ~/Pictures/$(date | awk '{ print $2"_"$3"_"$4"_"$5"_"$7 }' | sed s/://g) && notify-send "screenshot taken"
-bindsym Shift+F4 exec grim -g "$(slurp)" | wl-copy && notify-send "screenshot copied to clipboard"
-bindsym Alt+F4 exec grim ~/Pictures/$(date | awk '{ print $2"_"$3"_"$4"_"$5"_"$7 }' | sed s/://g)
+bindsym F4 exec grim -g "$(slurp)" ~/Pictures/$(date | awk '{ print $2"_"$3"_"$4"_"$5"_"$7 }' | sed s/://g).png && notify-send "screenshot taken"
 
 # Colors and borders
 client.focused #aaaacc #aaaacc #555577
