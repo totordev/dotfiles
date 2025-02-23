@@ -6,6 +6,7 @@ return {
       ensure_installed = {"lua", "python", "cpp", "bash"},
       highlight = { enable = "true" },
       indent = { enable = "true" },
+      icon_provider = "devicons",
     })
   end
 }
