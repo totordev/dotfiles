@@ -1,0 +1,144 @@
+set $mod Mod4
+
+# Startup applications
+
+input * {
+  xkb_layout fr
+  repeat_delay 200
+  repeat_rate 50
+}
+
+default_border pixel 2
+default_floating_border pixel 2
+
+exec dunst &
+exec swww init &
+exec ~/Scripts/swww-wallpaper &
+exec batsignal -b &
+
+# Keybindings
+bindsym $mod+o exec rofi -show emoji
+bindsym Print exec /home/tor/Scripts/screenshot -p
+bindsym Shift+Print exec /home/tor/Scripts/screenshot -f
+bindsym Alt+Print exec /home/tor/Scripts/screenshot -c
+bindsym $mod+Shift+m exec kitty -e tfm
+bindsym $mod+Shift+r exit
+
+bindsym $mod+n exec kitty
+bindsym $mod+r exec rofi -show drun -show-icons
+bindsym $mod+Shift+f exec zen-browser
+bindsym $mod+c kill
+bindsym $mod+m exec wlogout
+
+# Focus
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+h focus left
+bindsym $mod+l focus right
+bindsym $mod+Alt+j move down
+bindsym $mod+Alt+k move up
+bindsym $mod+Alt+h move left
+bindsym $mod+Alt+l move right
+
+# Workspace switching
+set $ws1 A
+set $ws2 Z
+set $ws3 E
+set $ws4 R
+set $ws5 T
+set $ws6 Y
+set $ws7 U
+set $ws8 I
+set $ws9 O
+
+bindsym $mod+Alt+$ws1 workspace number 1
+bindsym $mod+Alt+$ws2 workspace number 2
+bindsym $mod+Alt+$ws3 workspace number 3
+bindsym $mod+Alt+$ws4 workspace number 4
+bindsym $mod+Alt+$ws5 workspace number 5
+bindsym $mod+Alt+$ws6 workspace number 6
+bindsym $mod+Alt+$ws7 workspace number 7
+bindsym $mod+Alt+$ws8 workspace number 8
+bindsym $mod+Alt+$ws9 workspace number 9
+
+bindsym $mod+Alt+Shift+$ws1 move container to workspace number 1
+bindsym $mod+Alt+Shift+$ws2 move container to workspace number 2
+bindsym $mod+Alt+Shift+$ws3 move container to workspace number 3
+bindsym $mod+Alt+Shift+$ws4 move container to workspace number 4
+bindsym $mod+Alt+Shift+$ws5 move container to workspace number 5
+bindsym $mod+Alt+Shift+$ws6 move container to workspace number 6
+bindsym $mod+Alt+Shift+$ws7 move container to workspace number 7
+bindsym $mod+Alt+Shift+$ws8 move container to workspace number 8
+bindsym $mod+Alt+Shift+$ws9 move container to workspace number 9
+
+bindsym $mod+0 workspace number 10
+bindsym $mod+Shift+0 move container to workspace number 10
+
+# Floating and fullscreen
+bindsym $mod+v floating toggle
+bindsym $mod+f fullscreen toggle
+
+# Resize
+bindsym $mod+Shift+h resize shrink width 10px
+bindsym $mod+Shift+l resize grow width 10px
+bindsym $mod+Shift+j resize shrink height 10px
+bindsym $mod+Shift+k resize grow height 10px
+
+# Move windows
+
+# Mouse bindings
+floating_modifier $mod
+
+# Media keys
+bindsym XF86AudioRaiseVolume exec ~/Scripts/changevolume.sh up
+bindsym XF86AudioLowerVolume exec ~/Scripts/changevolume.sh down
+bindsym XF86AudioMute exec ~/Scripts/changevolume.sh mute
+bindsym XF86AudioPlay exec playerctl play-pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
+bindsym XF86MonBrightnessUp exec brightnessctl set 5%+
+bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
+
+# screenshots
+
+bindsym F4 exec grim -g "$(slurp)" ~/Pictures/$(date | awk '{ print $2"_"$3"_"$4"_"$5"_"$7 }' | sed s/://g) && notify-send "screenshot taken"
+bindsym Shift+F4 exec grim -g "$(slurp)" | wl-copy && notify-send "screenshot copied to clipboard"
+bindsym Alt+F4 exec grim ~/Pictures/$(date | awk '{ print $2"_"$3"_"$4"_"$5"_"$7 }' | sed s/://g)
+
+# Colors and borders
+client.focused #aaaacc #aaaacc #555577
+client.unfocused #555577 #555577 #333333
+for_window [class="gedit"] border pixel 2
+
+# Set gaps and borders
+gaps inner 10
+gaps outer 100
+
+# Titlebar tweaking
+
+
+# Bar
+
+bar {
+    position bottom
+    font "JetBrainsMono Nerd Font" 10
+
+
+    # When the status_command prints a new line to stdout, swaybar updates.
+    # The default just shows the current date and time.
+    status_command i3status-rs
+
+    colors {
+        statusline #ffffff
+        background #010111
+        inactive_workspace #32323200 #32323200 #5c5c5c
+    }
+}
+
+# SwayFX stuff
+
+shadows enable
+shadow_offset 25 25
+shadow_blur_radius 1
+
+corner_radius 5

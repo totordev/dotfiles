@@ -1,0 +1,36 @@
+[theme]
+theme = "dracula"
+[icons]
+icons = "material-nf"
+
+[[block]]
+block = "battery"
+device = "BAT0"
+format = " $icon $percentage "
+charging_format = " $icon $percentage "
+not_charging_format = " $icon $percentage "
+full_format = " $icon "
+empty_format = " $icon "
+
+[[block]]
+block = "music"
+player = "spotify"
+
+[[block]]
+block = "disk_space"
+[block.theme_overrides]
+idle_bg = "#FFB86C"
+idle_fg = "#282A36"
+
+[[block]]
+block = "sound"
+
+[[block]]
+block = "time"
+[block.theme_overrides]
+idle_bg = "#FF79C6"
+idle_fg = "#282A36"
+
+[[block]]
+block = "net"
+format = " $icon $ssid $signal_strength "

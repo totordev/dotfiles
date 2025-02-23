@@ -1,0 +1,38 @@
+2025/02/22-19:58:46.345 38bd3 Creating DB /home/tor/.config/vesktop/sessionData/Local Storage/leveldb since it was missing.
+2025/02/22-19:58:46.371 38bd3 Reusing MANIFEST /home/tor/.config/vesktop/sessionData/Local Storage/leveldb/MANIFEST-000001
+2025/02/22-20:00:01.337 38bd4 Level-0 table #5: started
+2025/02/22-20:00:01.343 38bd4 Level-0 table #5: 111365 bytes OK
+2025/02/22-20:00:01.346 38bd4 Delete type=0 #3
+2025/02/22-20:06:01.338 38bd4 Level-0 table #7: started
+2025/02/22-20:06:01.343 38bd4 Level-0 table #7: 19588 bytes OK
+2025/02/22-20:06:01.347 38bd4 Delete type=0 #4
+2025/02/22-20:15:01.338 38bd4 Level-0 table #9: started
+2025/02/22-20:15:01.364 38bd4 Level-0 table #9: 16349 bytes OK
+2025/02/22-20:15:01.368 38bd4 Delete type=0 #6
+2025/02/22-21:19:26.282 38bd4 Level-0 table #11: started
+2025/02/22-21:19:26.289 38bd4 Level-0 table #11: 114255 bytes OK
+2025/02/22-21:19:26.292 38bd4 Delete type=0 #8
+2025/02/22-22:24:55.627 38bd4 Level-0 table #13: started
+2025/02/22-22:24:55.675 38bd4 Level-0 table #13: 106445 bytes OK
+2025/02/22-22:24:55.679 38bd4 Delete type=0 #10
+2025/02/22-23:22:58.380 38bd4 Level-0 table #15: started
+2025/02/22-23:22:58.387 38bd4 Level-0 table #15: 124760 bytes OK
+2025/02/22-23:22:58.392 38bd4 Delete type=0 #12
+2025/02/22-23:22:58.393 38bd4 Compacting 4@0 + 1@1 files
+2025/02/22-23:22:58.399 38bd4 Generated table #16@0: 21 keys, 113502 bytes
+2025/02/22-23:22:58.400 38bd4 Compacted 4@0 + 1@1 files => 113502 bytes
+2025/02/22-23:22:58.403 38bd4 compacted to: files[ 0 1 1 0 0 0 0 ]
+2025/02/22-23:22:58.403 38bd4 Delete type=2 #11
+2025/02/22-23:22:58.403 38bd4 Delete type=2 #7
+2025/02/22-23:22:58.403 38bd4 Delete type=2 #9
+2025/02/22-23:22:58.403 38bd4 Delete type=2 #13
+2025/02/22-23:22:58.403 38bd4 Delete type=2 #15
+2025/02/22-23:27:53.547 38bd4 Level-0 table #18: started
+2025/02/22-23:27:53.554 38bd4 Level-0 table #18: 116679 bytes OK
+2025/02/22-23:27:53.558 38bd4 Delete type=0 #14
+2025/02/22-23:28:07.160 38bd4 Level-0 table #20: started
+2025/02/22-23:28:07.165 38bd4 Level-0 table #20: 115202 bytes OK
+2025/02/22-23:28:07.169 38bd4 Delete type=0 #17
+2025/02/22-23:33:12.367 38bd4 Level-0 table #22: started
+2025/02/22-23:33:12.396 38bd4 Level-0 table #22: 94958 bytes OK
+2025/02/22-23:33:12.400 38bd4 Delete type=0 #19
