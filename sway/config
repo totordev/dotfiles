@@ -21,7 +21,7 @@ bindsym $mod+o exec rofi -show emoji
 bindsym Print exec /home/tor/Scripts/screenshot -p
 bindsym Shift+Print exec /home/tor/Scripts/screenshot -f
 bindsym Alt+Print exec /home/tor/Scripts/screenshot -c
-bindsym $mod+Shift+m exec kitty -e tfm
+bindsym $mod+Shift+m exec kitty -e yazi
 bindsym $mod+Shift+r exit
 
 bindsym $mod+n exec kitty

@@ -21,5 +21,5 @@ vim.cmd("colorscheme tokyonight-night")
 
 -- neovide
 if vim.g.neovide then
-  vim.o.guifont = "JetBrainsMono Nerd Font:4"
+  vim.o.guifont = "Input:10"
 end
