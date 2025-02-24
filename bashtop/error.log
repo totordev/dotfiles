@@ -1,0 +1,5 @@
+ 
+New instance of bashtop version: 0.9.25 Pid: 311001
+/tmp/zCl5TmCUzjjy/bashtop.psutil:103: DeprecationWarning: 'count' is passed as positional argument
+  name = re.sub( ".*" + rem_line + ".*:", "", line,1).lstrip()
+/usr/bin//bashtop: line 4806: ${pycoproc[1]}: ambiguous redirect
