@@ -2666,3 +2666,9 @@ tab_bar_min_tabs 0
 # include ~/.config/kitty/themes/rose-pine.conf
 # include ~/.config/kitty/themes/everforest.conf
 include ~/.config/kitty/themes/tokyonight.conf
+
+
+# BEGIN_KITTY_THEME
+# Tokyonight
+include current-theme.conf
+# END_KITTY_THEME

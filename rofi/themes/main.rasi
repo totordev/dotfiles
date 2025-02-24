@@ -18,7 +18,7 @@
     lightbg:                     rgba ( 238, 232, 213, 100 % );
     selected-active-foreground:  rgba ( 2, 20, 63, 100 % );
     alternate-active-background: rgba ( 0, 0, 0, 0 % );
-    background:                  rgba ( 31, 29, 46, 100 % );
+    background:                  rgba ( 26, 27, 38, 100 % );
     alternate-normal-foreground: @foreground;
     normal-background:           rgba ( 0, 0, 208, 0 % );
     lightfg:                     rgba ( 88, 104, 117, 100 % );
@@ -40,6 +40,7 @@ window {
     padding:          5;
     width:          25%;
     height:         40%;
+    border-radius:  7px;
 }
 mainbox {
     border:  0;
@@ -142,7 +143,7 @@ inputbar {
 }
 textbox-prompt-colon {
     expand:     false;
-    str:        " ·";
+    str:        "  ";
     margin:     0px 0.3em 0em 0em ;
     text-color: @normal-foreground;
 }
