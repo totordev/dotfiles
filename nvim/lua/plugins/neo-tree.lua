@@ -15,6 +15,16 @@ return {
           hide_dotfiiles = false,
         },
       },
+      window = {
+        mappings = {
+          ["P"] = {
+            "toggle_preview",
+            config = {
+              use_float = true,
+            }
+          }
+        }
+      }
     })
     vim.keymap.set('n', '<C-f>', ':Neotree filesystem toggle<CR>', {})
   end

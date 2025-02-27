@@ -17,9 +17,12 @@ require("lazy").setup("plugins")
 
 -- colorscheme
 
-vim.cmd("colorscheme tokyonight-night")
+vim.cmd("colorscheme catppuccin-mocha")
 
 -- neovide
 if vim.g.neovide then
-  vim.o.guifont = "Input:10"
+  vim.o.guifont = "Input:h12"
+  vim.g.neovide_scroll_animation_length = 0.8
+  vim.g.neovide_cursor_trail_width = 1
+  vim.g.neovide_cursor_vfx_mode = "railgun"
 end

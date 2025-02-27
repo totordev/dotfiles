@@ -110,7 +110,7 @@ for_window [class="gedit"] border pixel 2
 
 # Set gaps and borders
 gaps inner 10
-gaps outer 100
+gaps outer 80
 
 # Titlebar tweaking
 

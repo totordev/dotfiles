@@ -1,0 +1,75 @@
+{
+  "fps": 10,
+  "keybinds": {
+    "esc;q": "quit()",
+    "h": "prev()",
+    "l": "next()",
+    " ": "play_pause()"
+  },
+  "align": "center",
+  "direction": "vertical",
+  "flex": "start",
+  "width": 20,
+  "height": 18,
+  "border": false,
+  "padding": [0, 0],
+  "bg": "reset",
+  "fg": "reset",
+  "cover_art_ascii": "~/.config/fum/ascii.txt",
+  "layout": [
+    {
+      "type": "container",
+      "width": 22,
+      "height": 16,
+      "border": false,
+      "padding": [0, 0],
+      "direction": "vertical",
+      "flex": "start",
+      "children": [
+        {
+          "type": "cover-art",
+          "width": 22,
+          "height": 11,
+          "border": false,
+          "resize": "scale"
+        },
+        {
+          "type": "empty",
+          "size": 1
+        },
+        {
+          "type": "label",
+          "text": "$title",
+          "align": "center",
+          "truncate": true,
+          "bold": false,
+          "height": 1
+        },
+        {
+          "type": "label",
+          "text": "$artists",
+          "align": "center",
+          "truncate": true,
+          "bold": false
+        },
+        {
+          "type": "empty",
+          "size": 1
+        },
+        {
+          "type": "progress",
+          "size": 1,
+          "direction": "horizontal",
+          "progress": {
+            "char": "█",
+             "fg": "blue"
+          },
+          "empty": {
+            "char": "▒",
+             "fg": "blue"
+          }
+        }
+      ]
+    }
+  ]
+}  
