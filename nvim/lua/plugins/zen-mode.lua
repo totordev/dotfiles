@@ -6,5 +6,5 @@ return {
     -- refer to the configuration section below
   },
 
-  vim.keymap.set({ 'n', 'i' }, '<C-S-z>', ':ZenMode<CR>', {})
+  vim.keymap.set({ 'n', 'i' }, '<C-A-c>', ':ZenMode<CR>', {})
 }

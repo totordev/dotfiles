@@ -21,7 +21,7 @@ bindsym $mod+o exec rofi -show emoji
 bindsym Print exec /home/tor/Scripts/screenshot -p
 bindsym Shift+Print exec /home/tor/Scripts/screenshot -f
 bindsym Alt+Print exec /home/tor/Scripts/screenshot -c
-bindsym $mod+Shift+m exec kitty -e yazi
+bindsym $mod+Shift+m exec kitty -e spf
 bindsym $mod+Shift+r exit
 
 bindsym $mod+n exec kitty
@@ -101,7 +101,7 @@ bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
 
 # screenshots
 
-bindsym F4 exec grim -g "$(slurp)" ~/Pictures/$(date | awk '{ print $2"_"$3"_"$4"_"$5"_"$7 }' | sed s/://g).png && notify-send "screenshot taken"
+bindsym F4 exec grim -g "$(slurp)" ~/Media/Pictures/$(date | awk '{ print $2"_"$3"_"$4"_"$5"_"$7 }' | sed s/://g).png && notify-send "screenshot taken"
 
 # Colors and borders
 client.focused #aaaacc #aaaacc #555577

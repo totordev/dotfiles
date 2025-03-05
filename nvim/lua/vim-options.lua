@@ -13,7 +13,6 @@ vim.cmd("set termguicolors")
 vim.g.mapleader = " "
 vim.opt.fillchars = {eob = " "}
 
-
 -- Keymaps
 
 vim.keymap.set('n', '<C-d>', ':noh<CR>')
