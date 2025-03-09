@@ -12,7 +12,9 @@ vim.cmd("set termguicolors")
 
 vim.g.mapleader = " "
 vim.opt.fillchars = {eob = " "}
+vim.opt.ignorecase = true
 
 -- Keymaps
 
-vim.keymap.set('n', '<C-d>', ':noh<CR>')
+vim.keymap.set("n", "<C-d>", "<C-d>zz")
+vim.keymap.set("n", "<C-u>", "<C-u>zz")
